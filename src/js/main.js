@@ -17,6 +17,38 @@ $(function(){
 	});
 
 
+	if($(window).width() > 767){
+		new WOW().init();
+	}
+
 	
+	$('.slider__right').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: false,
+		infinite: false,
+		arrows: true,
+		responsive: [
+			{
+			  breakpoint: 1023,
+			  settings: {
+				slidesToShow: 1,
+				vertical: false,
+			  }
+			},
+		]
+	});
 	
+	$('.slider__right').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.slider__left .slider__left__item').removeClass('active')
+		$('.slider__left .slider__left__item').eq(nextSlide).addClass('active')
+	});
+	
+	if($('.slider__left').length){
+		$('.slider__left .slider__left__item').eq(0).addClass('active')
+	}
+
+	
+
 })
