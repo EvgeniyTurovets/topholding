@@ -1,0 +1,245 @@
+.page-first .left50{
+    background-color: #303030;
+    background-size: cover;
+}
+.page-first .right50{
+    background-size: cover;
+    background-position: center;
+}
+.page-first {
+    height: 700px;
+    display: flex;
+}
+
+.page-first__left{
+    padding-top: 30px;
+    max-width: 570px;
+    margin-left: auto;
+}
+.page-first__left h2{
+    margin-top: 103px;
+}
+.page-first__left h2 span{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 110%;
+    display: block;
+    margin-bottom: 10px;
+}
+.breadcrums{
+    position: relative;
+    z-index: 2;
+    
+}
+.breadcrums a{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7D7D7D;
+}
+.breadcrums a:after{
+    content: "/";
+    margin: 0 5px;
+}
+.breadcrums li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FAFAFA;
+}
+.breadcrums ul{
+    display: flex;
+}
+
+
+.oholdinge-mision .h2b{
+    font-size: 30px;
+    line-height: 110%;
+    color: #333333;
+}
+.oholdinge-mision .h2b:before{
+    background-image: url(../img/h2bg.svg);
+    top: -98px;
+    left: -115px;
+    height: 267px;
+    width: 379px;
+}
+.oholdinge-mision .left50{
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+.oholdinge-mision__top{
+    padding-top: 60px;
+    width: 570px;
+    flex: 50%;
+    margin-left: auto;
+}
+.oholdinge-mision__bot{
+    flex: 50%;
+    background-size: cover;
+}
+.oholdinge-mision .left50{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.oholdinge-mision{
+    display: flex;
+}
+
+.oholdinge-mision__right{
+    padding-top: 130px;
+    padding-left: 60px;
+    max-width: 570px;
+}
+.oholdinge-mision__right p{
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #333333;
+    margin-bottom: 20px;
+
+}
+.oholdinge-mision__right a{
+    margin-top: 184px;
+    margin-bottom: 65px;
+}
+
+
+
+
+@media(max-width: 1199px){
+    .page-first__left{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .oholdinge-mision__top{
+        width: 100%;
+        padding: 15px;
+        padding-top: 60px;
+    }
+    
+}
+
+@media(max-width: 1023px){
+    .oholdinge-mision .left50{
+        width: 100%;
+        flex: auto;
+    }
+    .oholdinge-mision__top{
+        padding: 60px 60px;
+    }
+    .oholdinge-mision{
+        flex-wrap: wrap;
+    }
+    .oholdinge-mision .right50{
+        width: 100%;
+    }
+    .oholdinge-mision__right a{
+        margin-top: 50px;
+    }
+    .oholdinge-mision__right{
+        padding-top: 50px;
+    }
+    .oholdinge-mision__right{
+        max-width: 100%;
+        padding-right: 60px;
+    }
+    .page-first{
+        height: 500px;
+    }
+    .page-first__left{
+        margin-left: 0;
+    }
+    
+}
+
+@media(max-width: 991px){
+    .page-first .right50{
+        width: 100%;
+        height: 500px;
+    }
+    .page-first .left50{
+        width: 100%;
+    }
+    .page-first{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .page-first__left{
+        padding-bottom: 60px;
+    }
+    .page-first__left h2{
+        margin-top: 60px;
+    }
+}
+
+@media(max-width: 559px){
+    .page-first__left h2 span{
+        font-size: 25px;
+    }
+    .page-first .right50{
+        width: 100%;
+        height: 300px;
+    }
+    .oholdinge-mision__top{
+        padding: 40px 15px;
+    }
+    .oholdinge-mision__right{
+        padding: 25px 15px;
+    }
+    .oholdinge-mision__right p{
+        font-size: 16px;
+    }
+}
+
+
+.ruk-text{
+    height: 450px;
+    background: #F1F1F1;
+    display: flex;
+    align-items: center;
+}
+.ruk-text p{
+    max-width: 906px;
+    position: relative;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    letter-spacing: 0.02em;
+}
+.ruk-text p:before{
+    content: "";
+    width: 30px;
+    height: 5px;
+    display: block;
+    background-color: #be1f30;
+    position: absolute;
+    top: 11px;
+    left: -60px;
+}
+@media(max-width: 1300px){
+    .ruk-text p{
+        margin-left: 60px;
+    }
+}
+
+@media(max-width: 500px){
+    .ruk-text p:before{
+        display: none;
+    }
+    .ruk-text p{
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .ruk-text{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+}

@@ -303,7 +303,6 @@ p{
     height: 300px;
 }
 .main-mission__title{
-    font-family: $font;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 30px;
@@ -636,6 +635,10 @@ p{
     align-items: center;
     color: #ffffff;
     margin-bottom: 50px;
+    transition: 0.3s all;
+}
+.footer__item:hover{
+    transform: translateX(5px);
 }
 .footer__item:last-child{
     margin-bottom: 0;
@@ -847,6 +850,7 @@ p{
     border: 0;
     font-size: 0;
     transition: 0.3s all;
+    cursor: pointer;
 }
 .slick-next {
     top: 60px;
@@ -881,7 +885,7 @@ button:focus{
 }
 .slider__right__item{
     height: 300px;
-    background-size: cover;
+    background-size: cover!important;
     padding-left: 149px;
     padding-top: 70px;
     position: relative;
@@ -906,7 +910,6 @@ button:focus{
     font-weight: bold;
     font-size: 30px;
     line-height: 110%;
-    font-family: $font;
     color: #F0F0F0;
     position: relative;
     z-index: 2;
@@ -1099,6 +1102,7 @@ button:focus{
         left: auto;
         top: -60px;
         right: 0;
+        
     }
     .slider__right .slick-prev{
         right: 60px;
@@ -1162,7 +1166,8 @@ button:focus{
         left: 30px;
     }
     .slider__leftwrap{
-        padding: 50px 15px;
+        padding: 40px 15px;
+        padding-bottom: 60px;
     }
     .pokazateli{
         padding: 50px 15px;
@@ -1172,5 +1177,13 @@ button:focus{
 @media(max-width: 424px){
     .slider__right__title {
         font-size: 22px
+    }
+    .slider__right__textinvisible{
+        max-width: 85%;
+    }
+}
+@media(max-width: 374px){
+    .slider__right__textinvisible{
+        max-width: 80%;
     }
 }
