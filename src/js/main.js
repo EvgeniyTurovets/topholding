@@ -49,6 +49,6 @@ $(function(){
 		$('.slider__left .slider__left__item').eq(0).addClass('active')
 	}
 
-	
+	$('.select').selectric();
 
 })
