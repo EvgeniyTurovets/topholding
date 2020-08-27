@@ -51,4 +51,20 @@ $(function(){
 
 	$('.select').selectric();
 
+	$("#contactval").validate({
+		errorPlacement: function(error,element) {
+			return true;
+		  },
+
+		submitHandler: function(form) {
+		// do other things for a valid form
+			formSubmite()
+		}
+	})
+	function formSubmite(){
+		$('.contact2').addClass('submite-form')
+		$('#contactval').fadeOut()
+		$('.contact_no_confirm').hide()
+		$('.contact_confirm').fadeIn()
+	}
 })
