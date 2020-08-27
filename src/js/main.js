@@ -67,4 +67,6 @@ $(function(){
 		$('.contact_no_confirm').hide()
 		$('.contact_confirm').fadeIn()
 	}
+
+
 })

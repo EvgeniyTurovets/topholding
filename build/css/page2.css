@@ -281,12 +281,12 @@ input.error + label {
 .contact__place__item a:hover {
   color: #303030; }
 
-.contact__map {
+#contact__map {
   height: 600px;
   position: relative;
   overflow: hidden; }
 
-.contact__map iframe {
+#contact__map iframe {
   height: 100%;
   width: 100%; }
 
@@ -317,7 +317,7 @@ input.error + label {
 @media (max-width: 559px) {
   .contact__place__item a {
     font-size: 25px; }
-  .contact__map {
+  #contact__map {
     height: 400px; } }
 
 @media (max-width: 374px) {
