@@ -779,6 +779,9 @@ p {
 .slick-next {
   top: 60px; }
 
+.slick-vertical .slick-slide {
+  border: 0; }
+
 .slick-prev:before {
   content: "";
   display: block;

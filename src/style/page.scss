@@ -745,7 +745,7 @@
     }
 }
 
-.o-comp-prod .h2b:before{
+.h2b.h2white:before{
     background-image: url('../img/h2w.png');
     top: -98px;
     left: -115px;
@@ -845,3 +845,4 @@
     }
     
 }
+@import './page2.scss';

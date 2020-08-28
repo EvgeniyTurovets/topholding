@@ -40,6 +40,23 @@ $(function(){
 		]
 	});
 	
+	$('.info__slider__wraper').slick({
+		variableWidth: true,
+		infinite: false,
+		slidesToShow: 4,
+		
+		responsive: [
+			{
+			  breakpoint: 1023,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				
+			  }
+			},
+		]
+	})
+
 	$('.slider__right').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.slider__left .slider__left__item').removeClass('active')
 		$('.slider__left .slider__left__item').eq(nextSlide).addClass('active')
@@ -66,7 +83,27 @@ $(function(){
 		$('#contactval').fadeOut()
 		$('.contact_no_confirm').hide()
 		$('.contact_confirm').fadeIn()
+		if($('.modal').length){
+			$('.modal').addClass('submite')
+		}
 	}
 
+	$('.contact-close').click(function(){
+		$('.modal').removeClass('active')
+		$('body').removeClass('h')
+	})
 
+	$('.info__slider__item').click(function(){
+		$('.modal').addClass('active')
+		$('body').addClass('h')
+	})
+
+	$('.modal').mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".wrap"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.modal').removeClass('active')
+				$('body').removeClass('h')
+		}
+	});
 })
