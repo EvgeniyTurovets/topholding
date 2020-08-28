@@ -44,7 +44,8 @@ $(function(){
 		variableWidth: true,
 		infinite: false,
 		slidesToShow: 4,
-		
+		slidesToScroll: 1,
+		draggable: false,
 		responsive: [
 			{
 			  breakpoint: 1023,
@@ -54,6 +55,14 @@ $(function(){
 				
 			  }
 			},
+			{
+				breakpoint: 768,
+				settings: {
+				  slidesToShow: 2,
+				  slidesToScroll: 2,
+				  
+				}
+			  },
 		]
 	})
 
